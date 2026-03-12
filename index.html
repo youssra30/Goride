@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoRide - Votre trajet, votre choix 🚗</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GoRide</h1>
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#reserver">Réserver</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div id="clock"></div>
+    </header>
+    <section id="accueil" class="hero">
+      <div class="hero-text">
+        <h2>Votre trajet, votre choix, votre GoRide.</h2>
+        <p>Déplacez-vous rapidement, en toute sécurité.</p>
+        <a href="#reserver"><button>Réserver maintenant</button></a>
+      </div>
+    </section>
+    <section id="services">
+      <h2>Nos Services</h2>
+      <div class="services-container">
+        <div class="service-card fade">
+          <h3>🚕 Réservation rapide</h3>
+          <p>Commandez votre trajet en un clic et partez sans attendre.</p>
+        </div>
+        <div class="service-card fade">
+          <h3>🧍 Covoiturage économique</h3>
+          <p>Partagez le trajet et réduisez vos frais de transport.</p>
+        </div>
+        <div class="service-card fade">
+          <h3>📦 Livraison express</h3>
+          <p>Envoyez vos colis rapidement, en toute sécurité.</p>
+        </div>
+        <div class="service-card fade">
+          <h3>📞 Assistance 24h/24</h3>
+          <p>Notre équipe est disponible à tout moment pour vous aider.</p>
+        </div>
+      </div>
+    </section>
+    <section id="reserver" class="form-section">
+      <h2>Réserver un trajet</h2>
+      <form id="rideForm">
+        <input type="text" id="depart" placeholder="Point de départ" required />
+        <input type="text" id="destination" placeholder="Destination" required />
+        <input type="number" id="distance" placeholder="Distance (km)" required />
+        <input type="time" id="heure" required />
+        <button type="submit">Calculer le tarif</button>
+      </form>
+      <p id="resultat"></p>
+      <p id="confirmation"></p>
+
+      <p id="resultat"></p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>📍 45 Avenue Feryata, beni-mellel</p>
+        <p>📞 06 22 33 44 55</p>
+        <p>✉ contact@Goride.com</p>
+        <p>🕓 Lundi–Dimanche : 8h–22h</p>
+      </div>
+    </section>
+    <footer>
+      <p>© 2025 GoRide. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
